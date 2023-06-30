@@ -1,0 +1,41 @@
+#mydiv{
+    background-color: rgb(243, 243, 243);
+}
+ .py-5 {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+  
+
+  }
+  
+  @media (min-width: 992px) {
+    .container-lg, .container-md, .container-sm, .container {
+      max-width: 1900px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container-md, .container-sm, .container {
+      max-width: 1500px;
+    }
+  }
+  
+  @media (min-width: 576px) {
+    .container-sm, .container {
+      max-width: 1500px;
+    }
+  }
+  
+  .container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    
+    padding-right: calc(var(--bs-gutter-x)*.5);
+    padding-left: calc(var(--bs-gutter-x)*.5);
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
+  
+  

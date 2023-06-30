@@ -1,0 +1,83 @@
+body {
+
+  /*background-color: #0c0c0c;
+  background-image: linear-gradient(to bottom, #16e916, #000000);*/
+
+  background-image: url('../img/11798698_4857396.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.success-message {
+    color: rgb(10, 228, 10);
+    font-weight: bold;
+    height: 25px;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+    height: 25px
+  }
+  
+
+
+
+
+  
+
+          /* Estilos personalizados */
+          #micontenedor{
+            background-color: #ffffff;
+  background-image: linear-gradient(to bottom, #ffffff, #8f8f8f);
+            width: 100%;
+          }
+          #cont2{
+            background-color: #ffffff;
+            padding-bottom: 1rem!important;
+          }
+          #micontenedor .py-4 {
+            
+            padding-top: 1.5rem!important;
+            padding-bottom: 1.5rem!important;
+          }
+          
+          #micontenedor .align-items-center {
+            align-items: center!important;
+          }
+          
+          #micontenedor .flex-column {
+            flex-direction: column!important;
+          }
+          
+          #micontenedor .d-flex {
+            display: flex!important;
+          }
+          
+         @media (min-width:992px) {
+            .container, .container-lg, .container-md, .container-sm {
+              max-width: 1000x;
+            }
+          }
+          
+       @media (min-width:768px) {
+            .container, .container-md, .container-sm {
+              max-width: 1000px;
+            }
+          }
+          
+         @media (min-width:576px) {
+            .container, .container-sm {
+              max-width: 1500px;
+            }
+          }
+          
+          #micontenedor .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            width: 100%;
+            padding-right: calc(var(--bs-gutter-x) * .5);
+            padding-left: calc(var(--bs-gutter-x) * .5);
+            margin-right: auto;
+            margin-left: auto;
+        }
+          
