@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 <?php
     require 'seguridad/conn_mysql.php';
+    include 'seguridad/fechas.php';
 
 ?>
     <meta charset="utf-8">
@@ -11,9 +13,9 @@
     <title>MI-EMPRESA</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    
     
     <script src="js/sweetalert2.min.js"></script>
     <link rel="stylesheet" href="js/sweetalert2.min.css">
@@ -25,17 +27,18 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/Carousel-Hero.css">
+    <!--link rel="stylesheet" href="assets/css/Carousel-Hero.css"-->
     <link rel="stylesheet" href="assets/css/Navbar-With-Button-icons.css">
     <link rel="stylesheet" href="assets/css/Pretty-Footer-.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="css/best-carousel-slide.css">
+    
     <script type="text/javascript" href="js/jquery.min.js"></script>
     <!--link rel="stylesheet" href="js/sweetalert.css"-->
     <link src="js/main.js">
     <link src="js/funciones.js">
     
     <!--script src="js/sweetalert.min.js"></script-->
-    
+    <link rel="stylesheet" href="assets/css/stylescontact.css">
 
 </head>
 
@@ -97,52 +100,40 @@
 <?php   
 include 'inc/nav.php';
 ?>
-<div id="carousel-1" class="carousel slide" data-bs-ride="carousel" style="height: 500px;">
-    <div class="carousel-inner h-100">
-        <div class="carousel-item active h-100"><img class="w-100 d-block position-absolute h-100 fit-cover" src="assets/img/im1.jpg" alt="Slide Image" style="z-index: -1;" />
-            <div class="container d-flex flex-column justify-content-center h-100">
-                <div class="row">
-                    <div class="col-md-6 col-xl-4 offset-md-2">
-                        <div style="max-width: 350px;">
-                            <h1 class="hero-title fw-bold ">Biben dum<br />fringi dictum, augue purus</h1>
-                            <p class="my-3">Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien, risus donec ad fusce augue interdum.</p><a class="btn btn-primary btn-lg me-2" role="button" href="#">Button</a><a class="btn btn-outline-primary btn-lg" role="button" href="#">Button</a>
-                        </div>
-                    </div>
+<div style="background-color: rgb(243, 243, 243);">
+<section id="carousel">
+    <div id="carousel-1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <div class="bg-light border rounded border-light hero-nature carousel-hero jumbotron py-5 px-4">
+                    <h1 class="hero-title">Hero Nature</h1>
+                    <p class="hero-subtitle">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                    <p><a class="btn btn-primary hero-button plat" role="button" href="#">Learn more</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="bg-light border rounded border-light hero-photography carousel-hero jumbotron py-5 px-4">
+                    <h1 class="hero-title">Hero Photography</h1>
+                    <p class="hero-subtitle">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                    <p><a class="btn btn-primary hero-button plat" role="button" href="#">Learn more</a></p>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <div class="bg-light border rounded border-light hero-technology carousel-hero jumbotron py-5 px-4">
+                    <h1 class="hero-title">Hero Technology</h1>
+                    <p class="hero-subtitle">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                    <p><a class="btn btn-primary hero-button plat" role="button" href="#">Learn more</a></p>
                 </div>
             </div>
         </div>
-        <div class="carousel-item h-100"><img class="w-100 d-block position-absolute h-100 fit-cover" src="assets/img/img3.jpg" alt="Slide Image" style="z-index: -1;" />
-            <div class="container d-flex flex-column justify-content-center h-100">
-                <div class="row">
-                    <div class="col-md-6 col-xl-4 offset-md-2">
-                        <div style="max-width: 350px;">
-                            <h1 class="hero-title fw-bold">Biben dum<br />fringi dictum, augue purus</h1>
-                            <p class="my-3">Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien, risus donec ad fusce augue interdum.</p><a class="btn btn-primary btn-lg me-2" role="button" href="#">Button</a><a class="btn btn-outline-primary btn-lg" role="button" href="#">Button</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item h-100"><img class="w-100 d-block position-absolute h-100 fit-cover" src="assets/img/img3.jpg" alt="Slide Image" style="z-index: -1;" />
-            <div class="container d-flex flex-column justify-content-center h-100">
-                <div class="row">
-                    <div class="col-md-6 col-xl-4 offset-md-2">
-                        <div style="max-width: 350px;">
-                            <h1 class="hero-title fw-bold">Biben dum<br />fringi dictum, augue purus</h1>
-                            <p class="my-3">Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien, risus donec ad fusce augue interdum.</p><a class="btn btn-primary btn-lg me-2" role="button" href="#">Button</a><a class="btn btn-outline-primary btn-lg" role="button" href="#">Button</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carousel-1" data-bs-slide-to="0"></li>
+            <li data-bs-target="#carousel-1" data-bs-slide-to="1"></li>
+            <li class="active" data-bs-target="#carousel-1" data-bs-slide-to="2"></li>
+        </ol>
     </div>
-    <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
-    <ol class="carousel-indicators">
-        <li class="active" data-bs-target="#carousel-1" data-bs-slide-to="0"></li>
-        <li data-bs-target="#carousel-1" data-bs-slide-to="1"></li>
-        <li data-bs-target="#carousel-1" data-bs-slide-to="2"></li>
-    </ol>
-</div>
+</section>
 <!-- gallery-->
 
 <div class="container d-flex flex-column align-items-center py-4 py-xl-5" id="micontenedor">
@@ -179,51 +170,11 @@ include 'inc/nav.php';
             </div>
         </div>
     </div>
-
+    </div>
     <?php   
 include 'inc/footer.php';
 ?>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-
-
-    <!--script>
-        $(document).ready(function() {
-    // Manejar el envío del formulario
-    $('#signup1').submit(function(e) {
-        e.preventDefault(); // Evitar el envío del formulario
-
-        // Obtener los datos del formulario
-        var username = $('#username').val();
-        var password = $('#password').val();
-
-        // Realizar la solicitud AJAX  C:\xampp\htdocs\mi\acciones\login.php
-        $.ajax({
-            type: 'POST',
-            url: 'acciones/login.php',
-            data: {
-                username: username,
-                password: password
-            },
-            dataType: 'json',
-            success: function(response) {
-                if (response.success) {
-                    // Las credenciales son correctas, redirigir a la página principal
-                    console.log('Redireccionando a index.php');
-                    window.location.href = 'index.php';
-                } else {
-                    // Las credenciales son incorrectas, mostrar el mensaje de error en el formulario modal
-                    $('#errorContainer').text(response.message);
-                }
-            },
-            error: function() {
-                // Ocurrió un error en la solicitud AJAX
-                alert('Error en la solicitud AJAX');
-            }
-        });
-    });
-});
-
-    </script-->
 
 <script>
     
@@ -236,6 +187,7 @@ modalElement.addEventListener("hidden.bs.modal", function () {
   document.getElementById("full-name").value = "";
   document.getElementById("email").value = "";
   document.getElementById("phone").value = "";
+  document.getElementById("dir").value = "";
   document.getElementById("formCheck-1").checked = false;
 });
 
@@ -243,6 +195,6 @@ modalElement.addEventListener("hidden.bs.modal", function () {
 </script>
 
 
-
+<script src="js/funciones.js"></script>
 </body>
 </html>

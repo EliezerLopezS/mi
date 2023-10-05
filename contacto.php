@@ -7,6 +7,7 @@
 
     <?php
     require 'seguridad/conn_mysql.php';
+    include 'seguridad/fechas.php';
 
 ?>
     <meta charset="UTF-8">
@@ -101,7 +102,7 @@ include 'inc/nav.php';
 
 <?php include './inc/navbar.php'; ?>
    
-            ?>
+      
 <section class="py-5" id="mysection">
         <div class="container py-5">
             <div class="row mb-5">
@@ -139,7 +140,7 @@ include 'inc/nav.php';
 
                             <div class="px-2">
                                 <h6 class="fw-bold mb-0">Phone</h6>
-                                <p class="text-muted mb-0">+18485251340</p>
+                                <p class="text-muted mb-0">+17323631935, +18485254756</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center p-3">
@@ -148,7 +149,7 @@ include 'inc/nav.php';
                                 </svg></div>
                             <div class="px-2">
                                 <h6 class="fw-bold mb-0">Email</h6>
-                                <p class="text-muted mb-0">371eze6.375@gmail.com</p>
+                                <p class="text-muted mb-0">fullseasonlawnandlandscape@gmail.com</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center p-3">
@@ -157,14 +158,14 @@ include 'inc/nav.php';
                                 </svg></div>
                             <div class="px-2">
                                 <h6 class="fw-bold mb-0">Location</h6>
-                                <p class="text-muted mb-0">223 Ocean Ave, Lakewood NJ 08701 
+                                <p class="text-muted mb-0">413 Laurel Ave, Lakewood, NJ 08701
                                 </p>
                                 
                             </div>
                           
                         </div>
                         <div class="d-flex align-items-center p-3">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3052.3060672404827!2d-74.20759540503235!3d40.090888478201435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c4c13cc98bc11cb%3A0xfd1c8814368510f2!2sJC%20Happy%20Jump%20Party%20Rental!5e0!3m2!1ses-419!2sus!4v1674533880643!5m2!1ses-419!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3052.347818007265!2d-74.20186612485507!3d40.08995747546445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c18214b38fdfbf%3A0xc712219ef5adc5fc!2s413%20Laurel%20Ave%2C%20Lakewood%2C%20NJ%2008701%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1695512088906!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>

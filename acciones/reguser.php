@@ -11,6 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 $fullname=$_POST['full-name'];
 $email=$_POST['email'];
 $phone=$_POST['phone'];
+$dir=$_POST['dir'];
 $password=$_POST['password'];
 $password2=$_POST['password2'];
 
@@ -28,14 +29,14 @@ $passhash=password_hash($password,PASSWORD_DEFAULT);
     }
 
     // Inserción del usuario en la base de datos
-    $stmt = $conn->prepare("INSERT INTO usuarios (nombre, email, phone,  passwod) VALUES (?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO usuarios (nombre, email, phone, addres,  passwod) VALUES (?, ?, ?, ?, ?)");
 
     if ($stmt === false) {
         echo json_encode(array('success' => false, 'message' => 'Error al preparar la consulta' . $conn->error));
         //die("Error al preparar la consulta: " . $conn->error);
     }
     
-    $stmt->bind_param("ssss", $fullname, $email, $phone, $passhash);
+    $stmt->bind_param("sssss", $fullname, $email, $phone, $dir, $passhash);
     
     if ($stmt->execute()) {
         echo json_encode(array('success' => true, 'message' => 'Registro exitoso...'));
